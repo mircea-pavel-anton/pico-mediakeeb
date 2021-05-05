@@ -131,36 +131,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1650 4950 950 
 Wire Wire Line
-	4750 1450 5400 1450
-Wire Wire Line
-	5500 1450 5500 1650
-Wire Wire Line
-	5500 1650 4950 1650
-Connection ~ 4950 1650
-Wire Wire Line
-	5600 1450 5600 2850
-Wire Wire Line
-	5600 2850 4750 2850
-Wire Wire Line
-	5700 1450 5700 3050
-Wire Wire Line
-	5700 3050 4750 3050
-Wire Wire Line
-	5800 1450 5800 3150
-Wire Wire Line
-	5800 3150 4750 3150
-$Comp
-L pico-mediakeeb:KY040 rotary_encoder_w_switch
-U 1 1 6096AC9D
-P 5600 1000
-F 0 "rotary_encoder_w_switch" H 5928 963 50  0000 L CNN
-F 1 "KY040" H 5928 872 50  0000 L CNN
-F 2 "" H 5600 1000 50  0001 C CNN
-F 3 "" H 5600 1000 50  0001 C CNN
-	1    5600 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2500 3300 2250 3300
 Wire Wire Line
 	2250 3300 2250 2950
@@ -191,4 +161,83 @@ Wire Wire Line
 Connection ~ 2250 2950
 Wire Wire Line
 	2250 2950 2250 2550
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 6097F51C
+P 5750 1900
+F 0 "SW?" H 5750 1533 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5750 1624 50  0000 C CNN
+F 2 "" H 5600 2060 50  0001 C CNN
+F 3 "~" H 5750 2160 50  0001 C CNN
+	1    5750 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 2000 6050 2190
+Wire Wire Line
+	6050 3050 4750 3050
+Wire Wire Line
+	6050 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 3150
+Wire Wire Line
+	6100 3150 4750 3150
+Wire Wire Line
+	4750 2950 5450 2950
+Wire Wire Line
+	5450 2950 5450 2000
+Wire Wire Line
+	5450 1800 5350 1800
+Wire Wire Line
+	5350 1800 5350 2850
+Wire Wire Line
+	5350 2850 4750 2850
+Wire Wire Line
+	6050 1900 6260 1900
+Wire Wire Line
+	6260 1900 6260 1450
+Wire Wire Line
+	6260 1450 4750 1450
+$Comp
+L Device:R R1
+U 1 1 6099BEDA
+P 6380 2190
+F 0 "R1" V 6173 2190 50  0000 C CNN
+F 1 "10k" V 6264 2190 50  0000 C CNN
+F 2 "" V 6310 2190 50  0001 C CNN
+F 3 "~" H 6380 2190 50  0001 C CNN
+	1    6380 2190
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6099D114
+P 6390 2520
+F 0 "R2" V 6183 2520 50  0000 C CNN
+F 1 "10k" V 6274 2520 50  0000 C CNN
+F 2 "" V 6320 2520 50  0001 C CNN
+F 3 "~" H 6390 2520 50  0001 C CNN
+	1    6390 2520
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2190 6230 2190
+Connection ~ 6050 2190
+Wire Wire Line
+	6050 2190 6050 2520
+Wire Wire Line
+	6050 2520 6240 2520
+Connection ~ 6050 2520
+Wire Wire Line
+	6050 2520 6050 3050
+Wire Wire Line
+	6540 2520 6540 2190
+Wire Wire Line
+	6540 2190 6530 2190
+Wire Wire Line
+	6540 2190 6540 950 
+Wire Wire Line
+	6540 950  4950 950 
+Connection ~ 6540 2190
+Connection ~ 4950 950 
 $EndSCHEMATC
