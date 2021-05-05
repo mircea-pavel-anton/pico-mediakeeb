@@ -6,6 +6,6 @@ A small multimedia macro-pad implemented on top of the RPI2040 based Raspberry p
 
 1. Flash your pico to use the latest CircuitPython uf2 file.
 
-2. Copy the `src` directory into the root of the pico
+2. Clone this repo into the root of the pi
 
-3. Unplug and replug the pico board
+3. Unplug and replug the board
