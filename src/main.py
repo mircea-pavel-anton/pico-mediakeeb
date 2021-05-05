@@ -20,7 +20,7 @@ btn_next.setOnPressCallback( next_track )
 
 # ------------ Colume control ------------
 # Volume encoder
-vol_encoder = Encoder( board.GP16, board.GP17, board.GP18 )
+vol_encoder = Encoder( board.GP17, board.GP16, board.GP18 )
 vol_encoder.setOnRotateCwCallback( volume_up )
 vol_encoder.setOnRotateCcwCallback( volume_down )
 vol_encoder.setOnPressCallback( mute_toggle )
