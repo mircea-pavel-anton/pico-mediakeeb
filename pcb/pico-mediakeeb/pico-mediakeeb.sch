@@ -131,36 +131,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1650 4950 950 
 Wire Wire Line
-	4950 950  2500 950 
-Wire Wire Line
-	2500 950  2500 1300
-Connection ~ 2500 1300
-Wire Wire Line
-	2500 1300 2500 1700
-Connection ~ 2500 1700
-Wire Wire Line
-	2500 1700 2500 2150
-Connection ~ 2500 2150
-Wire Wire Line
-	2500 2150 2500 2550
-Connection ~ 2500 2550
-Wire Wire Line
-	2500 2550 2500 2950
-Connection ~ 2500 2950
-Wire Wire Line
-	2500 2950 2500 3300
-$Comp
-L pico-mediakeeb:KY040 U?
-U 1 1 6096AC9D
-P 5600 1000
-F 0 "U?" H 5928 963 50  0000 L CNN
-F 1 "KY040" H 5928 872 50  0000 L CNN
-F 2 "" H 5600 1000 50  0001 C CNN
-F 3 "" H 5600 1000 50  0001 C CNN
-	1    5600 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	4750 1450 5400 1450
 Wire Wire Line
 	5500 1450 5500 1650
@@ -179,4 +149,46 @@ Wire Wire Line
 	5800 1450 5800 3150
 Wire Wire Line
 	5800 3150 4750 3150
+$Comp
+L pico-mediakeeb:KY040 rotary_encoder_w_switch
+U 1 1 6096AC9D
+P 5600 1000
+F 0 "rotary_encoder_w_switch" H 5928 963 50  0000 L CNN
+F 1 "KY040" H 5928 872 50  0000 L CNN
+F 2 "" H 5600 1000 50  0001 C CNN
+F 3 "" H 5600 1000 50  0001 C CNN
+	1    5600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3300 2250 3300
+Wire Wire Line
+	2250 3300 2250 2950
+Wire Wire Line
+	2250 950  4950 950 
+Wire Wire Line
+	2500 1300 2250 1300
+Connection ~ 2250 1300
+Wire Wire Line
+	2250 1300 2250 950 
+Wire Wire Line
+	2500 1700 2250 1700
+Connection ~ 2250 1700
+Wire Wire Line
+	2250 1700 2250 1300
+Wire Wire Line
+	2500 2150 2250 2150
+Connection ~ 2250 2150
+Wire Wire Line
+	2250 2150 2250 1700
+Wire Wire Line
+	2500 2550 2250 2550
+Connection ~ 2250 2550
+Wire Wire Line
+	2250 2550 2250 2150
+Wire Wire Line
+	2500 2950 2250 2950
+Connection ~ 2250 2950
+Wire Wire Line
+	2250 2950 2250 2550
 $EndSCHEMATC

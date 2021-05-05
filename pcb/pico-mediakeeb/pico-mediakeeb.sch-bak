@@ -149,4 +149,34 @@ Wire Wire Line
 Connection ~ 2500 2950
 Wire Wire Line
 	2500 2950 2500 3300
+$Comp
+L pico-mediakeeb:KY040 U?
+U 1 1 6096AC9D
+P 5600 1000
+F 0 "U?" H 5928 963 50  0000 L CNN
+F 1 "KY040" H 5928 872 50  0000 L CNN
+F 2 "" H 5600 1000 50  0001 C CNN
+F 3 "" H 5600 1000 50  0001 C CNN
+	1    5600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1450 5400 1450
+Wire Wire Line
+	5500 1450 5500 1650
+Wire Wire Line
+	5500 1650 4950 1650
+Connection ~ 4950 1650
+Wire Wire Line
+	5600 1450 5600 2850
+Wire Wire Line
+	5600 2850 4750 2850
+Wire Wire Line
+	5700 1450 5700 3050
+Wire Wire Line
+	5700 3050 4750 3050
+Wire Wire Line
+	5800 1450 5800 3150
+Wire Wire Line
+	5800 3150 4750 3150
 $EndSCHEMATC
