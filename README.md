@@ -1,6 +1,6 @@
 # pico-mediakeeb
 
-A small multimedia macro-pad implemented on top of the RPI2040 based Raspberry pi Pico.
+A small multimedia macro-pad implemented on top of the RP2040 based Raspberry pi Pico.
 
 ## Getting started
 
