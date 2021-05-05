@@ -12,7 +12,7 @@ class Encoder:
     
     button = None
     
-    def __init__(self, dt_pin, clk_pin, sw_pin):
+    def __init__(self, clk_pin, dt_pin, sw_pin):
         self.data = digitalio.DigitalInOut( dt_pin)
         self.data.direction = digitalio.Direction.INPUT
         self.data_old = False
