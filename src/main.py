@@ -20,7 +20,7 @@ btn_next.setOnPressCallback( next_track )
 
 # ------------ Colume control ------------
 # Volume encoder
-vol_encoder = Encoder( board.GP16, board.GP17, board.GP13 )
+vol_encoder = Encoder( board.GP16, board.GP17, board.GP18 )
 vol_encoder.setOnRotateCwCallback( volume_up )
 vol_encoder.setOnRotateCcwCallback( volume_down )
 vol_encoder.setOnPressCallback( mute_toggle )
@@ -28,15 +28,15 @@ vol_encoder.setOnReleaseCallback( mute_toggle )
 
 # ------------ Extra Function Keys ------------
 # Macro Button #1
-btn_mac1 = Button( board.GP18 )
+btn_mac1 = Button( board.GP13 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # Macro Button #2
-btn_mac2 = Button( board.GP1 )
+btn_mac2 = Button( board.GP14 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # Macro Button #3
-btn_mac3 = Button( board.GP20 )
+btn_mac3 = Button( board.GP15 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # ------------ Status LED ------------
