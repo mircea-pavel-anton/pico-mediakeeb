@@ -7,7 +7,7 @@ from functions import *
 
 # ------------ Track control Buttons ------------
 # Previous Track
-btn_prev = Button( board.GP10 )
+btn_prev = Button( board.GP12 )
 btn_prev.setOnPressCallback( prev_track )
 
 # Play/Pause
@@ -15,7 +15,7 @@ btn_plpa = Button( board.GP11 )
 btn_plpa.setOnPressCallback( play_pause )
 
 # Next Track
-btn_next = Button( board.GP12 )
+btn_next = Button( board.GP10 )
 btn_next.setOnPressCallback( next_track )
 
 # ------------ Colume control ------------
@@ -28,7 +28,7 @@ vol_encoder.setOnReleaseCallback( mute_toggle )
 
 # ------------ Extra Function Keys ------------
 # Macro Button #1
-btn_mac1 = Button( board.GP13 )
+btn_mac1 = Button( board.GP15 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # Macro Button #2
@@ -36,7 +36,7 @@ btn_mac2 = Button( board.GP14 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # Macro Button #3
-btn_mac3 = Button( board.GP15 )
+btn_mac3 = Button( board.GP13 )
 btn_mac1.setOnPressCallback( macro1 )
 
 # ------------ Status LED ------------
