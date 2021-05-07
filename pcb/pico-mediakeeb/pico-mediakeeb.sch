@@ -115,17 +115,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1300 3300 1300
 $Comp
-L Switch:SW_DPST_x2 SW6
-U 1 1 60940921
-P 2700 3300
-F 0 "SW6" H 2700 3535 50  0000 C CNN
-F 1 "btn_macro_3" H 2700 3444 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 3300 50  0001 C CNN
-F 3 "~" H 2700 3300 50  0001 C CNN
-	1    2700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DPST_x2 SW5
 U 1 1 6094091B
 P 2700 2950
@@ -139,23 +128,23 @@ $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW4
 U 1 1 60940915
-P 2700 2550
-F 0 "SW4" H 2700 2785 50  0000 C CNN
-F 1 "btn_macro_1" H 2700 2694 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2550 50  0001 C CNN
-F 3 "~" H 2700 2550 50  0001 C CNN
-	1    2700 2550
+P 2700 3300
+F 0 "SW4" H 2700 3535 50  0000 C CNN
+F 1 "btn_macro_1" H 2700 3444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 3300 50  0001 C CNN
+F 3 "~" H 2700 3300 50  0001 C CNN
+	1    2700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW3
 U 1 1 609327D9
-P 2700 2150
-F 0 "SW3" H 2700 2385 50  0000 C CNN
-F 1 "btn_next" H 2700 2294 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2150 50  0001 C CNN
-F 3 "~" H 2700 2150 50  0001 C CNN
-	1    2700 2150
+P 2700 1300
+F 0 "SW3" H 2700 1535 50  0000 C CNN
+F 1 "btn_next" H 2700 1444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 1300 50  0001 C CNN
+F 3 "~" H 2700 1300 50  0001 C CNN
+	1    2700 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -172,152 +161,114 @@ $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW1
 U 1 1 60931FB6
-P 2700 1300
-F 0 "SW1" H 2700 1535 50  0000 C CNN
-F 1 "btn_prev" H 2700 1444 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 1300 50  0001 C CNN
-F 3 "~" H 2700 1300 50  0001 C CNN
-	1    2700 1300
+P 2700 2150
+F 0 "SW1" H 2700 2385 50  0000 C CNN
+F 1 "btn_prev" H 2700 2294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2150 50  0001 C CNN
+F 3 "~" H 2700 2150 50  0001 C CNN
+	1    2700 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60945260
-P 2250 3490
-F 0 "#PWR?" H 2250 3340 50  0001 C CNN
-F 1 "+3.3V" H 2265 3663 50  0000 C CNN
-F 2 "" H 2250 3490 50  0001 C CNN
-F 3 "" H 2250 3490 50  0001 C CNN
-	1    2250 3490
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60946472
-P 6580 2650
-F 0 "#PWR?" H 6580 2500 50  0001 C CNN
-F 1 "+3.3V" H 6595 2823 50  0000 C CNN
-F 2 "" H 6580 2650 50  0001 C CNN
-F 3 "" H 6580 2650 50  0001 C CNN
-	1    6580 2650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6094B363
-P 4750 1650
-F 0 "#PWR?" H 4750 1500 50  0001 C CNN
-F 1 "+3.3V" H 4765 1823 50  0000 C CNN
-F 2 "" H 4750 1650 50  0001 C CNN
-F 3 "" H 4750 1650 50  0001 C CNN
-	1    4750 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 6099BEDA
-P 6930 2410
-F 0 "R1" V 6723 2410 50  0000 C CNN
-F 1 "10k" V 6814 2410 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6860 2410 50  0001 C CNN
-F 3 "~" H 6930 2410 50  0001 C CNN
-	1    6930 2410
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	2500 2950 2250 2950
+Wire Wire Line
+	2250 2950 2250 2550
+Connection ~ 2250 2550
+Wire Wire Line
+	2500 2550 2250 2550
+Connection ~ 2250 1700
+Wire Wire Line
+	2500 1700 2250 1700
+Wire Wire Line
+	2250 1700 2250 1300
+Wire Wire Line
+	2250 1300 2250 950 
+Connection ~ 2250 1300
+Wire Wire Line
+	2500 1300 2250 1300
+Connection ~ 2250 2950
+Wire Wire Line
+	2250 3300 2250 2950
+Wire Wire Line
+	2500 3300 2250 3300
+Wire Wire Line
+	6100 3150 4750 3150
+Wire Wire Line
+	6050 1800 6100 1800
+Wire Wire Line
+	6050 2520 6050 3050
+Connection ~ 6050 2520
+Wire Wire Line
+	6050 2520 6240 2520
+Wire Wire Line
+	6540 2190 6530 2190
 $Comp
 L Device:R R2
 U 1 1 6099D114
-P 6200 2250
-F 0 "R2" V 5993 2250 50  0000 C CNN
-F 1 "10k" V 6084 2250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 6130 2250 50  0001 C CNN
-F 3 "~" H 6200 2250 50  0001 C CNN
-	1    6200 2250
+P 6390 2520
+F 0 "R2" V 6183 2520 50  0000 C CNN
+F 1 "10k" V 6274 2520 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6320 2520 50  0001 C CNN
+F 3 "~" H 6390 2520 50  0001 C CNN
+	1    6390 2520
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7090 2410 7080 2410
+	6540 2520 6540 2190
+Connection ~ 6540 2190
 Wire Wire Line
-	6050 2000 6050 2250
-$Comp
-L power:GND #PWR?
-U 1 1 609660FD
-P 6050 1900
-F 0 "#PWR?" H 6050 1650 50  0001 C CNN
-F 1 "GND" H 6055 1727 50  0000 C CNN
-F 2 "" H 6050 1900 50  0001 C CNN
-F 3 "" H 6050 1900 50  0001 C CNN
-	1    6050 1900
-	0    -1   -1   0   
-$EndComp
+	6540 2190 6540 950 
 Wire Wire Line
-	7090 1800 7090 2410
+	6260 1900 6260 1450
 Wire Wire Line
-	6050 1800 7090 1800
+	6050 1900 6260 1900
 Wire Wire Line
-	4750 3150 7090 3150
-Connection ~ 6050 2250
+	6260 1450 4750 1450
 Wire Wire Line
-	6050 2250 6050 3050
-Connection ~ 7090 2410
+	4750 1650 4950 1650
 Wire Wire Line
-	7090 2410 7090 3150
+	6540 950  4950 950 
 Wire Wire Line
-	6580 2250 6580 2410
+	2250 950  4950 950 
+Connection ~ 4950 950 
 Wire Wire Line
-	6350 2250 6580 2250
+	4950 1650 4950 950 
 Wire Wire Line
-	6580 2410 6780 2410
-Connection ~ 6580 2410
+	2250 1700 2250 2150
 Wire Wire Line
-	6580 2410 6580 2650
-Connection ~ 6780 2410
-Wire Wire Line
-	6780 2410 6790 2410
-Wire Wire Line
-	2500 1300 2250 1300
-Wire Wire Line
-	2500 3300 2250 3300
-Connection ~ 2250 3300
-Wire Wire Line
-	2250 3300 2250 3490
-Wire Wire Line
-	2500 2950 2250 2950
-Connection ~ 2250 2950
-Wire Wire Line
-	2250 2950 2250 3300
-Wire Wire Line
-	2500 2550 2250 2550
-Connection ~ 2250 2550
-Wire Wire Line
-	2250 2550 2250 2950
-Wire Wire Line
-	2510 2150 2500 2150
+	2500 2150 2250 2150
 Connection ~ 2250 2150
 Wire Wire Line
 	2250 2150 2250 2550
-Connection ~ 2500 2150
 Wire Wire Line
-	2500 2150 2250 2150
-Wire Wire Line
-	2510 1700 2500 1700
-Wire Wire Line
-	2250 1300 2250 1700
-Connection ~ 2250 1700
-Wire Wire Line
-	2250 1700 2250 2150
-Connection ~ 2500 1700
-Wire Wire Line
-	2500 1700 2250 1700
+	6100 1800 6100 2190
 $Comp
-L power:GND #PWR?
-U 1 1 60947068
-P 4750 1450
-F 0 "#PWR?" H 4750 1200 50  0001 C CNN
-F 1 "GND" H 4755 1277 50  0000 C CNN
-F 2 "" H 4750 1450 50  0001 C CNN
-F 3 "" H 4750 1450 50  0001 C CNN
-	1    4750 1450
-	0    -1   -1   0   
+L Device:R R1
+U 1 1 6099BEDA
+P 6390 2190
+F 0 "R1" V 6183 2190 50  0000 C CNN
+F 1 "10k" V 6274 2190 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6320 2190 50  0001 C CNN
+F 3 "~" H 6390 2190 50  0001 C CNN
+	1    6390 2190
+	0    1    1    0   
 $EndComp
+$Comp
+L Switch:SW_DPST_x2 SW6
+U 1 1 60940921
+P 2700 2550
+F 0 "SW6" H 2700 2785 50  0000 C CNN
+F 1 "btn_macro_3" H 2700 2694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2550 50  0001 C CNN
+F 3 "~" H 2700 2550 50  0001 C CNN
+	1    2700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2000 6050 2520
+Wire Wire Line
+	6240 2190 6100 2190
+Connection ~ 6100 2190
+Wire Wire Line
+	6100 2190 6100 3150
 $EndSCHEMATC
