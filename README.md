@@ -2,9 +2,6 @@
 
 A small multimedia macro-pad implemented on top of the RP2040 based Raspberry pi Pico.
 
-<img src="res/pcb-front.png" height="385">
-<img src="res/pcb-back.png" width="500">
-
 ---
 
 ## Getting Started
@@ -30,6 +27,10 @@ Once you flashed your pico, it should unmount by itself and then remount as a st
 Next, we need to download or clone this repo, and copy over the contents of `src/` into the mounted `CIRCUITPYTHON` volume, so thy pi can run it. Once you copied everything over, the pi should start running the code. You can tell whether or not it is working by the onboard LED. Once the program starts running, it should turn on. If it doesn't, try unplugging and replugging your pico.
 
 ### Printing your own PCB
+
+| PCB Front | PCB Back |
+| :-------: | :------: |
+| <img src="res/pcb-front.png" height="385"> | <img src="res/pcb-back.png" width="500"> |
 
 In the `pcb/` directory of this repo, you can find a KiCAD project that contains the circuit schematic (in case you want to handwire everything) and a PCB design (in case you want to print your own board). You should open the project and generate the gerber files, or just take the pre-generated ones from `pcb/gerber` and send them to your preffered PCB printing service. I personally used JLC PCB.
 
