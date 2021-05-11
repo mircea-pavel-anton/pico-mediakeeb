@@ -117,56 +117,56 @@ Wire Wire Line
 $Comp
 L Switch:SW_DPST_x2 SW5
 U 1 1 6094091B
+P 2700 2150
+F 0 "SW5" H 2700 2385 50  0000 C CNN
+F 1 "btn_macro_2" H 2700 2294 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2150 50  0001 C CNN
+F 3 "~" H 2700 2150 50  0001 C CNN
+	1    2700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW4
+U 1 1 60940915
 P 2700 2950
-F 0 "SW5" H 2700 3185 50  0000 C CNN
-F 1 "btn_macro_2" H 2700 3094 50  0000 C CNN
+F 0 "SW4" H 2700 3185 50  0000 C CNN
+F 1 "btn_macro_1" H 2700 3094 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2950 50  0001 C CNN
 F 3 "~" H 2700 2950 50  0001 C CNN
 	1    2700 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPST_x2 SW4
-U 1 1 60940915
-P 2700 3300
-F 0 "SW4" H 2700 3535 50  0000 C CNN
-F 1 "btn_macro_1" H 2700 3444 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 3300 50  0001 C CNN
-F 3 "~" H 2700 3300 50  0001 C CNN
-	1    2700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DPST_x2 SW3
 U 1 1 609327D9
-P 2700 1300
-F 0 "SW3" H 2700 1535 50  0000 C CNN
-F 1 "btn_next" H 2700 1444 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 1300 50  0001 C CNN
-F 3 "~" H 2700 1300 50  0001 C CNN
-	1    2700 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DPST_x2 SW2
-U 1 1 6093271C
 P 2700 1700
-F 0 "SW2" H 2700 1935 50  0000 C CNN
-F 1 "btn_play_pause" H 2700 1844 50  0000 C CNN
+F 0 "SW3" H 2700 1935 50  0000 C CNN
+F 1 "btn_next" H 2700 1844 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 1700 50  0001 C CNN
 F 3 "~" H 2700 1700 50  0001 C CNN
 	1    2700 1700
 	1    0    0    -1  
 $EndComp
 $Comp
+L Switch:SW_DPST_x2 SW2
+U 1 1 6093271C
+P 2700 2550
+F 0 "SW2" H 2700 2785 50  0000 C CNN
+F 1 "btn_play_pause" H 2700 2694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2550 50  0001 C CNN
+F 3 "~" H 2700 2550 50  0001 C CNN
+	1    2700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
 L Switch:SW_DPST_x2 SW1
 U 1 1 60931FB6
-P 2700 2150
-F 0 "SW1" H 2700 2385 50  0000 C CNN
-F 1 "btn_prev" H 2700 2294 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2150 50  0001 C CNN
-F 3 "~" H 2700 2150 50  0001 C CNN
-	1    2700 2150
+P 2700 3300
+F 0 "SW1" H 2700 3535 50  0000 C CNN
+F 1 "btn_prev" H 2700 3444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 3300 50  0001 C CNN
+F 3 "~" H 2700 3300 50  0001 C CNN
+	1    2700 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -256,12 +256,12 @@ $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW6
 U 1 1 60940921
-P 2700 2550
-F 0 "SW6" H 2700 2785 50  0000 C CNN
-F 1 "btn_macro_3" H 2700 2694 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 2550 50  0001 C CNN
-F 3 "~" H 2700 2550 50  0001 C CNN
-	1    2700 2550
+P 2700 1300
+F 0 "SW6" H 2700 1535 50  0000 C CNN
+F 1 "btn_macro_3" H 2700 1444 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 2700 1300 50  0001 C CNN
+F 3 "~" H 2700 1300 50  0001 C CNN
+	1    2700 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
