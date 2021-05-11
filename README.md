@@ -2,6 +2,11 @@
 
 A small multimedia macro-pad implemented on top of the RP2040 based Raspberry pi Pico.
 
+<img src="res/pcb-front.png" height="385">
+<img src="res/pcb-back.png" width="500">
+
+---
+
 ## Getting Started
 
 The basic steps to get this up and running are:
